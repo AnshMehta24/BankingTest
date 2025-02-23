@@ -18,7 +18,7 @@ export const convertCurrency = createAsyncThunk("account/convertCurrency", async
 
 
     } catch (error) {
-        console.log(error, "ERR FROM THUNK")
+        // console.log(error, "ERR FROM THUNK")
         return thunkAPI.rejectWithValue(error.message)
     }
 })
